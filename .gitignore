@@ -1,0 +1,76 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Environment variables
+.env
+.env.local
+
+# ML Models & artifacts (track verified production lightweight models < 5MB)
+models/*.joblib
+!models/best_eta_regressor.joblib
+!models/best_late_classifier.joblib
+!models/dark_store_kmeans.joblib
+!models/rider_segmentation_kmeans.joblib
+models/*.pkl
+models/*.json
+!models/.gitkeep
+
+# Raw datasets (preserve locally, do not upload to GitHub)
+*.xlsx
+train.xlsx
+data/train.xlsx
+data/processed/
+
+# Pytest & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+

@@ -1,0 +1,8 @@
+model_name,task_type,algorithm,mae,rmse,r2_score,mape_percent,timestamp,split,val_mae,val_rmse,val_r2,training_time_sec,best_params,accuracy,precision,recall,f1_score,roc_auc,pr_auc,true_negatives,false_positives,false_negatives,true_positives,optimal_threshold,val_f1
+Mean Baseline Regressor (Test),regression,mean_baseline,7.502,9.312,-0.0003,34.34,2026-10-31T12:26:04.820395,test,7.842,9.656,-0.002,0.0,,,,,,,,,,,,,
+Ridge Regression (Test),regression,ridge,4.982,6.28,0.5451,22.42,2026-10-31T12:26:04.897983,test,5.059,6.34,0.5679,0.01,alpha=50.0,,,,,,,,,,,,
+Random Forest Regressor (Test),regression,random_forest,3.33,4.178,0.7987,14.59,2026-10-31T12:26:10.121402,test,3.329,4.225,0.8082,0.76,"{'n_estimators': 100, 'max_depth': 10, 'min_samples_leaf': 4}",,,,,,,,,,,,
+XGBoost Regressor (Test),regression,xgboost,3.317,4.15,0.8013,14.56,2026-10-31T12:26:14.768724,test,3.291,4.16,0.814,1.43,"{'n_estimators': 250, 'max_depth': 7, 'learning_rate': 0.03, 'subsample': 0.85}",,,,,,,,,,,,
+Logistic Regression Classifier,classification,logistic_regression,,,,,2026-10-31T12:26:15.131111,test,,,,0.14,,0.8625,0.7432,0.7961,0.7687,0.9288,0.859,5369.0,669.0,496.0,1936.0,0.59,0.7967
+Random Forest Classifier,classification,random_forest,,,,,2026-10-31T12:26:16.224166,test,,,,0.73,,0.9242,0.8708,0.8643,0.8675,0.9791,0.9577,5726.0,312.0,330.0,2102.0,0.57,0.8856
+XGBoost Classifier,classification,xgboost,,,,,2026-10-31T12:26:17.577579,test,,,,1.07,,0.9248,0.8589,0.8832,0.8709,0.9814,0.9614,5685.0,353.0,284.0,2148.0,0.59,0.8938
